@@ -10,6 +10,5 @@ steps:
     A_SECRET:
       from_secret: a_secret
   commands:
-  - echo $$A_SECRET
-  - go run . > test_secret.txt
+  - echo $$A_SECRET test_secret。txt
   - cat test_secret.txt
